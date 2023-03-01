@@ -17,7 +17,7 @@ import java.util.List;
  
 
 
-@CrossOrigin(origins = "http://localhost:8080")
+
 @RestController
 public class ProductController {
     private final ProductService productService;
@@ -32,7 +32,7 @@ public class ProductController {
     	System.out.println("");
       return "Hello World!";
     }
-    @CrossOrigin(origins = "http://localhost:8080")
+    
     @GetMapping("/products")
     public ResponseEntity<List<Product>> getAllProducts () {
         List<Product> products = productService.findAllProducts();
