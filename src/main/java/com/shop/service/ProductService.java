@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import com.shop.model.Product;
 import com.shop.repo.ProductRepo;
 
-import tech.getarrays.employeemanager.exception.UserNotFoundException;
+import tech.getarrays.shop.exception.UserNotFoundException;
 
 import javax.transaction.Transactional;
 import java.util.List;
